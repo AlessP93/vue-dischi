@@ -1,25 +1,25 @@
 <template>
   <div id="app">
-    <div class="container">
-      <div class="row">
-        <div class="col">A</div>
-        <div class="col">B</div>
-      </div>
-    </div>
-  </div>
+    <base-header/>
+    <base-main/>
+</div>
 </template>
 
+
 <script>
+import BaseHeader from './components/blocks/BaseHeader.vue';
+import BaseMain from './components/blocks/BaseMain.vue';
 
 
 export default {
   name: 'App',
   components: {
-
+    BaseHeader,
+    BaseMain,
   }
 }
 </script>
 
 <style lang="scss">
-@import 'assets/style/global.scss';
+@import './assets/style/global.scss';
 </style>

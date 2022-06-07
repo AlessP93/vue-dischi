@@ -1,3 +1,9 @@
 // ------------ LIBRARY
 
-@import '~bootstrap/scss/bootstap.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+
+// ------------ GLOBAL PARTS
+
+@import './global-parts/variables';
+@import './global-parts/reset';
+@import './global-parts/typography';
