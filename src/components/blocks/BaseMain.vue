@@ -1,14 +1,17 @@
 <template>
     <main>
-        <div class="container">
-
-        </div>
+        <SectionAlbums/>
     </main>
 </template>
 
 <script>
+import SectionAlbums from '../sections/SectionAlbums.vue';
+
 export default {
-    name: 'BaseMain'
+    name: 'BaseMain',
+    components: {
+        SectionAlbums
+    },
 }
 </script>
 
