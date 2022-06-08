@@ -1,9 +1,9 @@
 <template>
   <div class="singleCard">
-     <!-- <img :src="artists.poster" :alt="artists.title">
-     <h3>{{artists.title}}</h3>
-     <small>{{artists.author}}</small>
-     <small>{{artists.year}}</small> -->
+     <img :src="card.poster" :alt="card.title">
+     <h5>{{card.title}}</h5>
+     <small>{{card.author}}</small>
+     <div>{{card.year}}</div>
 
   </div>
 </template>
@@ -18,5 +18,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .singleCard {
+        background-color: var(--primary-color);
+        text-align: center;
+        
+        img {
+           width: 90%;
+           padding: 20px;
+        }
 
+        h5 {
+           color: white;
+        }
+
+        small, div {
+            color: lightgrey;
+        }
+    }
 </style>

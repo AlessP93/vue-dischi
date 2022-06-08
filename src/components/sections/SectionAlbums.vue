@@ -1,8 +1,8 @@
 <template>
   <section>
-    <div class="container">
-        <div class="row">
-            <CardAlbum class="col-12 col-sm-6 col-lg-2" v-for="artist in artists" :key="artist"/>
+    <div class="container-lg py-5">
+        <div class="row gap-4 justify-content-center">
+            <CardAlbum class="col-12 col-sm-6 col-lg-2" v-for="(artist, index) in artists" :key="index" :card="artist"/>
          </div>
     </div>
  </section>

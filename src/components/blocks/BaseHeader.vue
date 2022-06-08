@@ -1,8 +1,8 @@
 <template>
   <header>
-      <div class="container-fluid">
-          <img src="../../assets/img/spotify-logo.png" alt="logo-header">
-      </div>
+    <div class="container-fluid">
+        <img src="../../assets/img/spotify-logo.png" alt="logo-header">
+    </div>
   </header>
 </template>
 
