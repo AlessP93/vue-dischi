@@ -1,17 +1,23 @@
 <template>
   <div class="row">
-    <select id="select-genre"  @submit.prevent="$emit('selected)">
-        <option value=""></option>
-    </select>
+    ffff
+    <form @submit.prevent="$emit('filterInput', selected)">
+      <select v-model="selected">
+          <option value="artist.genre" :v-for="(artist, index) in artists">{{artist.genre}}</option>
+      </select>
+    </form>
   </div>
 </template>
 
 <script>
 export default {    
-    name: 'InputSelect'
+    name: 'InputSelect',
+    props: {
+      artists: []
+    }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
