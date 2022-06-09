@@ -1,11 +1,10 @@
 <template>
-  <div class="singleCard">
-     <img :src="card.poster" :alt="card.title">
-     <h5>{{card.title}}</h5>
-     <small>{{card.author}}</small>
-     <div>{{card.year}}</div>
-
-  </div>
+    <div class="singleCard">
+        <img :src="card.poster" :alt="card.title">
+        <h5>{{card.title}}</h5>
+        <small>{{card.author}}</small>
+        <div>{{card.year}}</div>
+    </div>
 </template>
 
 <script>
